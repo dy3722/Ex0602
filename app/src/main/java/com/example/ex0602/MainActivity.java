@@ -25,14 +25,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void gogo(View view) {
         num++;
-        if (num < 6)
+        if (num%7 != 0)
         {
             btn.setText("This is a click number: "+ num);
         }
         else
         {
-            btn.setText("Enough to click. Go to new start!");
-            num = 0;
+            btn.setText("BOOM!");
         }
 
     }
