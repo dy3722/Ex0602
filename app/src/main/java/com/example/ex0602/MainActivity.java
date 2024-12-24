@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
      Button btn;
+     int num = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gogo(View view) {
-        btn.setText("Oh, yea, I’ve been clicked!");
+        num++;
+        btn.setText("This is a click number: "+ num);
     }
 }
